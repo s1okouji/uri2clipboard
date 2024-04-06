@@ -1,0 +1,23 @@
+{
+    "name": "My Extension",
+    "description": "MyExtension",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {},
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {        
+        "copy": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+1"                
+            },
+            "description": "Copy a decoded URI of activeTab to clipboard"
+        }
+    },
+    "permissions": [
+        "offscreen",
+        "activeTab",        
+        "clipboardWrite"
+    ]
+}
